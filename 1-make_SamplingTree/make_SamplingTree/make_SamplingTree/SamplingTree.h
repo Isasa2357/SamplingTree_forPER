@@ -38,6 +38,14 @@ public:
 		this->_randEngine = std::mt19937(this->_rd());
 	}
 
+	SamplingTree(const SamplingTree& tree) {
+		this->_tree = tree._tree;
+		this->_write_idx = tree._write_idx;
+		this->_capacity = tree._capacity;
+		this->_real_size = tree._real_size;
+		this->_max_leafIdx = tree._max_leafIdx;
+	}
+
 	/*
 	値を追加する
 	Args:
