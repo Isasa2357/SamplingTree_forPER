@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(144,89): warning C4267: 'return': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(145,83): warning C4267: 'return': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+  make_SamplingTree.vcxproj -> C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\x64\Debug\make_SamplingTree.exe
