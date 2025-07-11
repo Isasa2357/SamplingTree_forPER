@@ -143,9 +143,9 @@ public:
 
 		// 更新
 		for (auto i = 0; i < values.size(); ++i) {
-			TYPE diff = values[i] - this->_tree[indics[i]];
-			this->_tree[indics[i]] = values[i];
-			this->propagate_update(indics[i], diff);
+			TYPE diff = values[i] - this->_tree[this->conv_leafIdx2treeIdx(indics[i])];
+			this->_tree[this->conv_leafIdx2treeIdx(indics[i])] = values[i];
+			this->propagate_update(this->conv_leafIdx2treeIdx(indics[i]), diff);
 		}
 	}
 
@@ -155,8 +155,8 @@ private:
 	/*
 	idxの位置から根までの値の更新を行う
 	*/
-	void propagate_update(const int idx, const TYPE diff) {
-		int seek = idx;
+	void propagate_update(const int treeIdx, const TYPE diff) {
+		int seek = treeIdx;
 
 		while (seek != 0) {
 			// seek 更新

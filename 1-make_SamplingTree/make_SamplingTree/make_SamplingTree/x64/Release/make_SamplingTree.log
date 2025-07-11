@@ -1,0 +1,23 @@
+﻿  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(34,68): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(232,87): warning C4267: 'return': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(233,81): warning C4267: 'return': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(237,63): warning C4267: 'return': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\make_SamplingTree\SamplingTree.h(238,77): warning C4267: 'return': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+  コード生成しています。
+  1 of 314 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  コード生成が終了しました。
+  make_SamplingTree.vcxproj -> C:\Work\UV_env\workstation_project\make_PER\1-make_SamplingTree\make_SamplingTree\x64\Release\make_SamplingTree.exe
