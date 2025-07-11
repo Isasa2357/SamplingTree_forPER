@@ -1,0 +1,10 @@
+^C:\WORK\UV_ENV\WORKSTATION_PROJECT\MAKE_PER\2-CMAKE\BUILD2\BUILD\_DEPS\PYBIND11-SUBBUILD\CMAKEFILES\92F26919DDAF01A6F22B4AB2973523BE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild -BC:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/pybind11-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

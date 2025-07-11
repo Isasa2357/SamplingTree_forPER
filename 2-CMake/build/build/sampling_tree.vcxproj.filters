@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Work\UV_env\workstation_project\make_PER\2-CMake\build\py_sampling_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\UV_env\workstation_project\make_PER\2-CMake\build\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{945C21F0-B0EA-3CEB-AB73-D40AE71E6D08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

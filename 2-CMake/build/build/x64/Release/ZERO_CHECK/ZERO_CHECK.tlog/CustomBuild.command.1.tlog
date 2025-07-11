@@ -1,0 +1,10 @@
+^C:\WORK\UV_ENV\WORKSTATION_PROJECT\MAKE_PER\2-CMAKE\BUILD\BUILD\CMAKEFILES\8C0483A8158A8A45ACE0007F407CD8D7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Work/UV_env/workstation_project/make_PER/2-CMake/build -BC:/Work/UV_env/workstation_project/make_PER/2-CMake/build/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Work/UV_env/workstation_project/make_PER/2-CMake/build/build/sampling_tree_bindings.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

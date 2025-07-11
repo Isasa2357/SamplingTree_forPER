@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/pybind11-populate"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/92f26919ddaf01a6f22b4ab2973523be/pybind11-populate.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/bf17225f8f89a993b7beb743ac7d7501/pybind11-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-build.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-download.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-install.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-test.rule"
+		},
+		{
+			"file" : "C:/Work/UV_env/workstation_project/make_PER/2-CMake/build2/build/_deps/pybind11-subbuild/CMakeFiles/5430b80cb18490caf674fb9bc65ead80/pybind11-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pybind11-populate"
+		],
+		"name" : "pybind11-populate"
+	}
+}

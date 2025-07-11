@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\UV_env\workstation_project\make_PER\2-CMake\build2\build\CMakeFiles\fbe005848e58baf1f7c9a6350c2bc950\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{865C7903-A7A9-3BD6-B9FB-F833E8C670BE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
