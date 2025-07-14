@@ -27,7 +27,7 @@ private:
 	size_t _real_size;
 
 	// max leaf
-	int _max_leafIdx;
+	int _max_leafIdx;					// treeIdx
 
 public:
 	SamplingTree(const size_t capacity) 
@@ -64,7 +64,7 @@ public:
 		this->_tree[write_treeIdx] = value;
 
 		// max_leafIdxの管理
-		if (value > this->_tree[this->_max_leafIdx]) this->_max_leafIdx = this->conv_treeIdx2leafIdx(write_treeIdx);
+		if (value > this->_tree[this->_max_leafIdx]) this->_max_leafIdx = write_treeIdx;
 		else if (write_treeIdx == this->_max_leafIdx) this->find_max_leaf();
 
 		// 木を修正
@@ -146,6 +146,10 @@ public:
 			TYPE diff = values[i] - this->_tree[this->conv_leafIdx2treeIdx(indics[i])];
 			this->_tree[this->conv_leafIdx2treeIdx(indics[i])] = values[i];
 			this->propagate_update(this->conv_leafIdx2treeIdx(indics[i]), diff);
+
+			// max leafの管理
+			if (this->conv_leafIdx2treeIdx(indics[i]) == this->_max_leafIdx) this->find_max_leaf();
+			else if (values[i] > this->max_leaf()) this->_max_leafIdx = this->conv_leafIdx2treeIdx(indics[i]);
 		}
 	}
 
@@ -211,9 +215,10 @@ private:
 	最大の葉を見つけ，その位置をmax_leafIdxに記録する
 	*/
 	void find_max_leaf() {
-		this->_max_leafIdx = this->get_first_leafpos_as_treeIdx();
 		for (int i = this->get_first_leafpos_as_treeIdx(); i <= this->get_last_leafpos_as_treeIdx(); ++i) {
-			if (this->_tree[this->_max_leafIdx] < this->_tree[i]) this->_max_leafIdx = i;
+			if (this->_tree[this->_max_leafIdx] < this->_tree[i]) {
+				this->_max_leafIdx = i;
+			}
 		}
 	}
 
@@ -234,14 +239,16 @@ private:
 	bool is_leaf(const int treeIdx) { return (0 <= this->conv_treeIdx2leafIdx(treeIdx) && this->conv_leafIdx2treeIdx(treeIdx) < this->_capacity); }
 
 	// ------------------------------ 意味のある変数を取得する ------------------------------
-	inline int get_first_leafpos_as_treeIdx() const { return this->_capacity; }						// 最初の葉の位置をtreeIdxで取得する
+	inline int get_first_leafpos_as_treeIdx() const { return this->_capacity - 1; }						// 最初の葉の位置をtreeIdxで取得する
 	inline int get_last_leafpos_as_treeIdx() const { return this->_tree.size() - 1; }				// 最後の葉の位置をtreeIdxで取得する
 
 
 	// ------------------------------ getter ------------------------------
 public:
 	inline TYPE total() const { return this->_tree[0]; }
-	inline TYPE mal_leaf() const {}
+	inline TYPE max_leaf() const { return this->_tree[this->_max_leafIdx]; }
+	inline TYPE max_leafIdx() const { return this->_max_leafIdx; }
+	inline std::vector<TYPE> tree() { return this->_tree; }
 
 public:
 	/*
@@ -262,6 +269,22 @@ public:
 			max_err = std::max(abs_err, max_err);
 		}
 		return max_err;
+	}
+
+	bool check_max_leaf() {
+		int max_leafIdx = 0;
+		TYPE max_leaf_value = 0.0;
+
+
+		for (int i = this->get_first_leafpos_as_treeIdx(); i <= this->get_last_leafpos_as_treeIdx(); ++i) {
+			if (max_leaf_value < this->_tree[i]) {
+				max_leaf_value = this->_tree[i];
+				max_leafIdx = i;
+			}
+		}
+		if (!(max_leafIdx == this->_max_leafIdx))
+			std::cout << max_leaf_value << ", " << max_leafIdx << ", " << this->_tree[this->_max_leafIdx] << ", " << this->_max_leafIdx << "\n";
+		return (max_leafIdx == this->_max_leafIdx);
 	}
 
 	void show() const {

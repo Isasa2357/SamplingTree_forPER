@@ -26,9 +26,9 @@ FetchContent_MakeAvailable(pybind11)
 
 find_package(Python3 3.10 COMPONENTS Interpreter Development REQUIRED)
 
-pybind11_add_module(sampling_tree
+pybind11_add_module(SamplingTree
     py_sampling_tree.cpp
 )
-set_target_properties(sampling_tree PROPERTIES
+set_target_properties(SamplingTree PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )

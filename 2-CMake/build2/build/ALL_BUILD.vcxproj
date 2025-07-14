@@ -174,9 +174,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Work\UV_env\workstation_project\make_PER\2-CMake\build2\build\sampling_tree.vcxproj">
-      <Project>{F566DC55-174B-3968-A5C6-E46AF35A0308}</Project>
-      <Name>sampling_tree</Name>
+    <ProjectReference Include="C:\Work\UV_env\workstation_project\make_PER\2-CMake\build2\build\SamplingTree.vcxproj">
+      <Project>{CA93EA8A-E2A8-370C-AFAC-1FFD6BBE7D56}</Project>
+      <Name>SamplingTree</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
